@@ -1,0 +1,44 @@
+{
+  "businessName": "Little Cove",
+  "tagline": "A cozy, faith-based childcare experience",
+
+  "announcement": {
+    "enabled": true,
+    "text": "Now enrolling for Fall! Limited spots available.",
+    "link": "https://m.me/LittleCoveEarlyLearning"
+  },
+
+  "announcements": [
+    {
+      "title": "Now Enrolling for Fall 🍂",
+      "text": "Spots are limited. Message us to reserve your place.",
+      "date": "September 2026"
+    },
+    {
+      "title": "Pumpkin Patch Week 🎃",
+      "text": "We’ll have themed activities and fun all week!",
+      "date": "October 2026"
+    }
+  ],
+
+  "services": ["Infants 🍼", "Toddlers 🧸", "Pre-K 🎨"],
+
+  "features": [
+    "Boutique-style care",
+    "Coffee bar for parents",
+    "Calm environment",
+    "Faith-centered"
+  ],
+
+  "facebookUsername": "LittleCoveEarlyLearning",
+  "mapQuery": "Mt Ida Arkansas",
+  "hours": ["Mon-Fri 7AM-5PM"],
+
+  "reviews": [
+    {
+      "name": "Parent",
+      "text": "Amazing environment and caring staff.",
+      "rating": 5
+    }
+  ]
+}
