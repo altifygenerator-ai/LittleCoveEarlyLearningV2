@@ -26,6 +26,7 @@ export default function Modern({ data }: { data: BusinessData }) {
     <a href="/enroll" className="hover:underline">Enroll</a>
     <a href="/pricing" className="hover:underline">Pricing</a>
     <a href="/renovation" className="hover:underline">Renovation</a>
+    <a href="/apply" className="hover:underline">Careers</a>
   </nav>
 
 </header>
@@ -66,8 +67,8 @@ export default function Modern({ data }: { data: BusinessData }) {
           <div className="flex justify-center gap-4 mt-6">
 
             <a
-              href={`https://m.me/${data.facebookUsername}`}
-              target="_blank"
+              href="/enroll"
+             
               className="bg-[#C98C6B] text-white px-6 py-3 rounded-full shadow"
             >
               Enroll My Child
@@ -160,8 +161,8 @@ export default function Modern({ data }: { data: BusinessData }) {
 
         <section className="text-center py-12">
           <a
-            href="https://m.me/TheLittleCoveEarlyLearning?text=Hi%20I%20would%20like%20to%20enroll%20my%20child"
-            target="_blank"
+            href="/enroll"
+            
             className="bg-[#C98C6B] text-white px-8 py-4 rounded-full shadow"
           >
             Enroll My Child

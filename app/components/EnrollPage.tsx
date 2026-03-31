@@ -1,6 +1,7 @@
+"use client";
 import type { BusinessData } from "@/types/data";
 import { Pacifico, Poppins } from "next/font/google";
-
+const calendlyLink = "#"; // replace later with real Calendly link
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "600"] });
 
@@ -15,7 +16,7 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
         backgroundPosition: "center",
       }}
     >
-      {/* NAVBAR (same as homepage) */}
+  
       <header className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <div className="font-semibold text-lg">
           Little Cove
@@ -28,10 +29,10 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
         </nav>
       </header>
 
-      {/* CONTENT WRAPPER (same overlay feel) */}
+  
       <div className="min-h-screen bg-[#F5EFE7]/50">
 
-        {/* HERO STYLE HEADER (matching homepage spacing) */}
+
         <section className="text-center py-20 px-4">
 
           <img src="/images/logo.png" className="h-20 mx-auto mb-6" />
@@ -47,33 +48,25 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
           <p className="mt-4 text-sm text-[#A38B7A]">
             Limited spots available
           </p>
+          <div className="mt-8">
+  <a
+    href="#"
+    onClick={(e) => {
+      e.preventDefault();
+      alert("Booking will be available soon!");
+    }}
+    className="bg-[#c8a27a] text-white px-8 py-3 rounded-full shadow-md hover:opacity-90 transition inline-block"
+  >
+    Schedule a Tour
+  </a>
+</div>
 
         </section>
 
-        {/* MAIN ACTION CARD */}
-        <section className="max-w-2xl mx-auto p-6">
+      
+    
 
-          <div className="bg-white p-8 rounded-2xl shadow-md border border-[#E5D3C5] text-center">
-
-            <h2 className="text-2xl mb-4">Start Enrollment</h2>
-
-            <p className="mb-6 text-[#6B4F3A]">
-              Click below to fill out our enrollment form. It only takes a few minutes.
-            </p>
-
-            <a
-              href="https://docs.google.com/forms/d/e/FORM_ID/viewform"
-              target="_blank"
-              className="bg-[#C98C6B] text-white px-8 py-4 rounded-full shadow inline-block"
-            >
-              Go to Enrollment Form
-            </a>
-
-          </div>
-
-        </section>
-
-        {/* OPTIONAL TRUST SECTION (matches your feature cards vibe) */}
+  
         <section className="max-w-4xl mx-auto p-6 grid md:grid-cols-3 gap-6">
 
           <div className="bg-white p-6 rounded-2xl shadow-sm text-center border border-[#E5D3C5]">
@@ -90,7 +83,7 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
 
         </section>
 
-        {/* CTA FOOTER (same style as homepage button) */}
+
         <section className="text-center py-12">
           <a
             href="https://m.me/TheLittleCoveEarlyLearning"
