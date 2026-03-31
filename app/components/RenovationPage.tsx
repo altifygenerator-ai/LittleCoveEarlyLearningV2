@@ -51,17 +51,40 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
             {/* IMAGE PLACEHOLDER */}
-            <div className="bg-white h-[250px] md:h-[350px] rounded-2xl shadow-md border border-[#E5D3C5] flex items-center justify-center text-[#A38B7A]">
-              Image Placeholder
-            </div>
+            <div className="grid grid-cols-2 gap-3">
+  {[
+    "/images/renovations/day1-1.jpg",
+    "/images/renovations/day1-2.jpg",
+    "/images/renovations/day1-3.jpg",
+    "/images/renovations/day1-4.jpg",
+  ].map((src, i) => (
+    <a
+      key={i}
+      href={src}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <img
+        src={src}
+        alt={`Renovation ${i + 1}`}
+        className="w-full h-[120px] md:h-[170px] object-cover rounded-xl shadow border border-[#E5D3C5] hover:opacity-80 transition"
+      />
+    </a>
+  ))}
+</div>
 
             {/* TEXT */}
             <div>
-              <h2 className="text-2xl mb-2">Day 1 — Getting Started</h2>
-              <p className="text-sm text-[#8C6F5A] mb-3">Initial cleanout & planning</p>
+              <h2 className="text-2xl mb-2">Say Hello to Little Cove Early Learning location!</h2>
+              <p className="text-sm text-[#8C6F5A] mb-3">Building Purchased!</p>
               <p>
-                We began by clearing out the space and planning how each area will be used.
-                Our goal is to create a safe, cozy, and functional environment for every age group.
+                I seriously cannot contain my excitement anymore!! This opportunity is something I’ve prayed for, worked toward, and dreamed about, and now it’s finally happening!
+We are SO excited to be able to serve families in this community. There is so much room to grow, expand, and create something truly special here, and I cannot wait to see where this journey takes us.
+I am beyond blessed and so thankful for all the love, support, and encouragement I’ve already received. It truly means more than you know.
+Now that being said, I am ACTIVELY looking for all things daycare/pre-k! 🧸✨  
+If you or someone you know is selling gently used items, please tag them below! I’ve also attached my wishlist, but absolutely no pressure at all.
+Thank you all again for supporting this dream and allowing me the opportunity to provide this service. I seriously cannot wait to meet you all!! ❤️
               </p>
             </div>
 
@@ -71,11 +94,10 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl mb-2">Painting & Brightening</h2>
-              <p className="text-sm text-[#8C6F5A] mb-3">Creating a warm atmosphere</p>
+              <h2 className="text-2xl mb-2">Update 2</h2>
+              <p className="text-sm text-[#8C6F5A] mb-3">Coming Soon</p>
               <p>
-                Fresh paint is bringing the space to life. We're choosing soft, calming tones
-                to create a peaceful and welcoming environment for the children.
+                Coming Soon!
               </p>
             </div>
 
@@ -93,11 +115,10 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
             </div>
 
             <div>
-              <h2 className="text-2xl mb-2">Setting Up Learning Areas</h2>
-              <p className="text-sm text-[#8C6F5A] mb-3">Designing each space intentionally</p>
+              <h2 className="text-2xl mb-2">Update 3</h2>
+              <p className="text-sm text-[#8C6F5A] mb-3">Coming Soon</p>
               <p>
-                Each section is being thoughtfully designed for infants, toddlers, and pre-K,
-                making sure every child has the right environment to learn and grow.
+                Coming Soon!
               </p>
             </div>
 
@@ -107,11 +128,10 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
             <div className="order-2 md:order-1">
-              <h2 className="text-2xl mb-2">Finishing Touches</h2>
-              <p className="text-sm text-[#8C6F5A] mb-3">Details that matter</p>
+              <h2 className="text-2xl mb-2">Update 4</h2>
+              <p className="text-sm text-[#8C6F5A] mb-3">Coming Soon</p>
               <p>
-                From decor to safety features, we’re putting in the final touches that will
-                make Little Cove feel like a second home.
+                Coming Soon!
               </p>
             </div>
 
