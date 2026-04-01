@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="2BwurFuZChwt31SjVIuSzFaqkjDO3wz5lQSDVxZGVos" />
 import "./globals.css";
 import type { Metadata } from "next";
 
