@@ -1,5 +1,6 @@
 import Modern from "@/app/components/Modern";
 import data from "@/content/content.json";
+<meta name="google-site-verification" content="2BwurFuZChwt31SjVIuSzFaqkjDO3wz5lQSDVxZGVos" />
 export const homeMetadata = {
   title: "Trusted Daycare in Mount Ida, Arkansas",
   description:
