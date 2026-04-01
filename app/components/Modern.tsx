@@ -1,6 +1,7 @@
+<meta name="google-site-verification" content="2BwurFuZChwt31SjVIuSzFaqkjDO3wz5lQSDVxZGVos" />
 import type { BusinessData } from "@/types/data";
 import { Pacifico, Poppins } from "next/font/google";
-
+<meta name="google-site-verification" content="2BwurFuZChwt31SjVIuSzFaqkjDO3wz5lQSDVxZGVos" />
 const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "600"] });
 
