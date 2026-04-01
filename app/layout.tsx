@@ -1,4 +1,3 @@
-<meta name="google-site-verification" content="2BwurFuZChwt31SjVIuSzFaqkjDO3wz5lQSDVxZGVos" />
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -17,14 +16,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body className="min-h-screen flex flex-col">
+        
+        {/* Main content */}
+        <main className="flex-grow">
+          {children}
+        </main>
+
+        {/* Footer */}
+        <footer className="text-center text-sm py-6 opacity-70">
+          © {new Date().getFullYear()} Little Cove Early Learning • Mount Ida, Arkansas • All rights reserved.
+        </footer>
+
+      </body>
     </html>
   );
 }

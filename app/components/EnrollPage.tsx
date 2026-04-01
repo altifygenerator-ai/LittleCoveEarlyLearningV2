@@ -50,15 +50,13 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
           </p>
           <div className="mt-8">
   <a
-    href="#"
-    onClick={(e) => {
-      e.preventDefault();
-      alert("Booking will be available soon!");
-    }}
-    className="bg-[#c8a27a] text-white px-8 py-3 rounded-full shadow-md hover:opacity-90 transition inline-block"
-  >
-    Schedule a Tour
-  </a>
+  href="https://calendly.com/littlecoveearlylearning/30min"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="bg-[#C08457] text-white px-6 py-3 rounded-full"
+>
+  Schedule a Tour
+</a>
 </div>
 
         </section>

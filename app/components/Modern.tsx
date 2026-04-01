@@ -149,7 +149,7 @@ export default function Modern({ data }: { data: BusinessData }) {
         <section className="max-w-4xl mx-auto p-6 text-center">
           <h2 className="mb-4">Location</h2>
           <iframe
-            src={`https://www.google.com/maps?q=${encodeURIComponent(data.mapQuery)}&output=embed`}
+            src={`https://www.google.com/maps?q=146+S+George+St+Mount+Ida+AR+71957&output=embed`}
             className="w-full h-64 rounded"
           />
         </section>
