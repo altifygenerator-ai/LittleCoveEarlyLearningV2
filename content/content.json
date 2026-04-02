@@ -32,12 +32,12 @@
 
   "facebookUsername": "LittleCoveEarlyLearning",
   "mapQuery": "Mt Ida Arkansas",
-  "hours": ["Mon-Fri 7AM-5PM"],
+  "hours": ["Mon-Fri 6AM-6PM"],
 
   "reviews": [
     {
-      "name": "Parent",
-      "text": "Amazing environment and caring staff.",
+      "name": "Your Reviews Here!",
+      "text": "Coming Soon!",
       "rating": 5
     }
   ]
