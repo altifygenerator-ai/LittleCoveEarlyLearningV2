@@ -159,7 +159,10 @@ Thank you all again for supporting this dream and allowing me the opportunity to
           </a>
 
         </section>
-
+<div className="sr-only">
+  daycare Mount Ida AR, childcare Mount Ida Arkansas, preschool Mount Ida,
+  early learning center Mount Ida AR
+</div>
       </div>
     </div>
   );

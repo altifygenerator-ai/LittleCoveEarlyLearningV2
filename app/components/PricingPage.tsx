@@ -117,6 +117,10 @@ export default function PricingPage({ data }: { data: BusinessData }) {
           </a>
 
         </section>
+        <div className="sr-only">
+  daycare Mount Ida AR, childcare Mount Ida Arkansas, preschool Mount Ida,
+  early learning center Mount Ida AR
+</div>
 
       </div>
     </div>

@@ -22,7 +22,9 @@ export default function Modern({ data }: { data: BusinessData }) {
   <div className="font-semibold text-lg">
     Little Cove
   </div>
-
+<h1 className="text-sm font-semibold">
+  Daycare & Early Learning Center in Mount Ida, AR
+</h1>
   <nav className="flex gap-6 text-sm">
     <a href="/enroll" className="hover:underline">Enroll</a>
     <a href="/pricing" className="hover:underline">Pricing</a>
@@ -153,10 +155,18 @@ export default function Modern({ data }: { data: BusinessData }) {
             className="w-full h-64 rounded"
           />
         </section>
+        <h2 className="text-2xl mt-12 font-medium text-center mx-auto">
+  A Local Daycare You Can Trust
+</h2>
+
+<p className="mt-2 text-gray-600 max-w-2xl text-center mx-auto">
+  Located in Mount Ida, Little Cove Early Learning is designed to give children a safe, engaging space to grow while giving parents peace of mind.
+</p>
         <section className="text-center p-6">
           <h2 className="mb-2">Hours</h2>
           {data.hours.map((hour, i) => (
             <p key={i}>{hour}</p>
+            
           ))}
         </section>
 
@@ -169,6 +179,10 @@ export default function Modern({ data }: { data: BusinessData }) {
             Enroll My Child
           </a>
         </section>
+        <div className="sr-only">
+  daycare Mount Ida AR, childcare Mount Ida Arkansas, preschool Mount Ida,
+  early learning center Mount Ida AR
+</div>
 
       </div>
     </div>

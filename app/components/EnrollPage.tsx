@@ -91,6 +91,10 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
             Message Us With Questions
           </a>
         </section>
+        <div className="sr-only">
+  daycare Mount Ida AR, childcare Mount Ida Arkansas, preschool Mount Ida,
+  early learning center Mount Ida AR
+</div>
 
       </div>
     </div>
