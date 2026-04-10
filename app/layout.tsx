@@ -1,6 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/react";
 export const metadata: Metadata = {
   title: {
     default: "Little Cove Early Learning | Mount Ida, Arkansas Daycare",
@@ -32,7 +32,7 @@ export default function RootLayout({
         <footer className="text-center text-sm py-6 opacity-70">
           © {new Date().getFullYear()} Little Cove Early Learning • Mount Ida, Arkansas • All rights reserved.
         </footer>
-
+<Analytics />
       </body>
     </html>
   );
