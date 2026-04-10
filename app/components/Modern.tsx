@@ -22,9 +22,14 @@ export default function Modern({ data }: { data: BusinessData }) {
   <div className="font-semibold text-lg">
     Little Cove
   </div>
-<h1 className="text-sm font-semibold">
-  Daycare & Early Learning Center in Mount Ida, AR
-</h1>
+<p className="text-sm md:text-base text-right">
+  <span className="block md:hidden">
+    Daycare in Mount Ida, AR
+  </span>
+  <span className="hidden md:block">
+    Daycare & Early Learning Center in Mount Ida, AR
+  </span>
+</p>
   <nav className="flex gap-6 text-sm">
     <a href="/enroll" className="hover:underline">Enroll</a>
     <a href="/pricing" className="hover:underline">Pricing</a>
@@ -148,6 +153,53 @@ export default function Modern({ data }: { data: BusinessData }) {
             </div>
           ))}
         </section>
+<section className="py-16 px-6 text-center">
+  <div className="max-w-3xl mx-auto">
+    
+    <h2 className="text-3xl md:text-4xl font-semibold mb-6">
+      🌈 We're Growing — Come Be Part of Little Cove
+    </h2>
+
+    <p className="mb-6 text-lg opacity-80">
+      It’s getting real over here 🥹  
+      With so much love and interest coming in, we’re looking to bring on 1–2 amazing humans to join Little Cove Early Learning.
+    </p>
+
+    <div className="text-left space-y-4 mb-8">
+      <p className="font-medium">Here’s the kind of person we’re looking for:</p>
+
+      <ul className="space-y-2">
+        <li>👶 You genuinely love being around kids (not just tolerate them)</li>
+        <li>✨ You have a great attitude — patient, kind, and positive</li>
+        <li>💛 You value yourself and help teach that to the kids too</li>
+        <li>🕒 You’re reliable — if you say you’re there, you’re there</li>
+        <li>🔞 You’re 18+</li>
+      </ul>
+    </div>
+
+    <div className="text-left space-y-3 mb-8">
+      <p className="font-medium">The official stuff:</p>
+      <ul className="space-y-2">
+        <li>✔️ Background check required</li>
+        <li>✔️ CPR/First Aid certified (or willing to get it — we’ll help)</li>
+      </ul>
+    </div>
+
+    <p className="mb-6 italic opacity-80">
+      This isn’t just a job — we’re building something special.  
+      A cozy, safe, home-away-from-home for these babies and their families.
+    </p>
+
+    <a
+      href="/apply"
+      className="inline-block bg-[#C08457] text-white px-8 py-3 rounded-full text-lg"
+    >
+      Apply to Join Our Team
+    </a>
+
+  </div>
+</section>
+
         <section className="max-w-4xl mx-auto p-6 text-center">
           <h2 className="mb-4">Location</h2>
           <iframe
