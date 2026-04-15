@@ -67,7 +67,10 @@ export default function Modern({ data }: { data: BusinessData }) {
           <p className="tracking-[0.2em] text-sm mt-2 text-[#8C6F5A]">
             EARLY LEARNING
           </p>
-
+          <h2 className={`${pacifico.className} text-xl md:text-xl`}>
+            Daycare & Early Learning Center in Mt Ida, Arkansas
+          </h2>
+          
           <p className="mt-6 text-[#6B4F3A] max-w-xl mx-auto">
             {data.tagline}
           </p>
