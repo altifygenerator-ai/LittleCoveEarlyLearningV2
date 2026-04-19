@@ -58,18 +58,12 @@ export default function Modern({ data }: { data: BusinessData }) {
 
         <section className="text-center py-20 px-4">
 
-          <img src="/images/logo.png" className="h-20 mx-auto mb-6" />
+          <img src="/images/logo.png" className="h-90 mx-auto mb-6" />
 
-          <h1 className={`${pacifico.className} text-5xl md:text-6xl`}>
-            {data.businessName}
-          </h1>
-
-          <p className="tracking-[0.2em] text-sm mt-2 text-[#8C6F5A]">
-            EARLY LEARNING
-          </p>
-          <h2 className={`${pacifico.className} text-xl md:text-xl`}>
+        
+          <h1 className={`${pacifico.className} text-xl md:text-xl`}>
             Daycare & Early Learning Center in Mt Ida, Arkansas
-          </h2>
+          </h1>
           
           <p className="mt-6 text-[#6B4F3A] max-w-xl mx-auto">
             {data.tagline}
