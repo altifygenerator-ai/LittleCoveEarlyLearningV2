@@ -93,19 +93,32 @@ Thank you all again for supporting this dream and allowing me the opportunity to
           {/* STEP 2 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
 
-            <div className="order-2 md:order-1">
-              <h2 className="text-2xl mb-2">Update 2</h2>
-              <p className="text-sm text-[#8C6F5A] mb-3">Coming Soon</p>
-              <p>
-                Coming Soon!
-              </p>
-            </div>
+  <div className="order-2 md:order-1">
+    <h2 className="text-2xl mb-2">The First Touch</h2>
+    <p className="text-sm text-[#8C6F5A] mb-3">Getting Started</p>
+    <p>
+      I feel like this is the ground breaking! Our first piece of decor in our (soon to be) check in and Photo Booth area!
 
-            <div className="order-1 md:order-2 bg-white h-[250px] md:h-[350px] rounded-2xl shadow-md border border-[#E5D3C5] flex items-center justify-center text-[#A38B7A]">
-              Image Placeholder
-            </div>
+      SO EXCITING! We close on our house on Tuesday and then it’s full time Little Cove time so I can get this opened for my Montgomery parents! 🫶❤️
+    </p>
+  </div>
 
-          </div>
+  <div className="order-1 md:order-2">
+    <a
+      href="/images/renovations/day2-1.jpg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="block"
+    >
+      <img
+        src="/images/renovations/day2-1.jpg"
+        alt="Renovation update"
+        className="w-full h-[250px] md:h-[350px] object-cover rounded-2xl shadow-md border border-[#E5D3C5] hover:opacity-80 transition"
+      />
+    </a>
+  </div>
+
+</div>
 
           {/* STEP 3 */}
           <div className="grid md:grid-cols-2 gap-8 items-center">
