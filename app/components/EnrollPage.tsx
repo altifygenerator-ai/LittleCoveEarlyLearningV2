@@ -80,7 +80,103 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
           </div>
 
         </section>
+<section className="max-w-4xl mx-auto px-6 py-10">
+  <div className="bg-white/90 rounded-3xl shadow-sm border border-[#E5D3C5] p-8">
+    <h2 className={`${pacifico.className} text-4xl mb-4 text-center`}>
+      How Enrollment Works
+    </h2>
 
+    <div className="grid md:grid-cols-3 gap-6 mt-8 text-center">
+      <div>
+        <h3 className="font-semibold mb-2">1. Join the Waitlist</h3>
+        <p className="text-sm text-[#6B4F3A]">
+          Start by reaching out so we can learn more about your child, their age,
+          and what kind of care your family is needing.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold mb-2">2. Schedule a Tour</h3>
+        <p className="text-sm text-[#6B4F3A]">
+          Come see the Little Cove space, ask questions, and get a feel for the
+          environment we’re creating for local families.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold mb-2">3. Save Your Spot</h3>
+        <p className="text-sm text-[#6B4F3A]">
+          Once availability is confirmed, we’ll walk you through the next steps
+          for enrollment paperwork and start dates.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section className="max-w-4xl mx-auto px-6 py-6">
+  <div className="grid md:grid-cols-2 gap-6 items-stretch">
+    <div className="bg-[#FFF8F1]/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">What Families Can Expect</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        Little Cove Early Learning is being built to feel warm, calm, safe, and
+        personal. Our goal is to create a home-away-from-home where children are
+        cared for, encouraged, and given space to grow through play, structure,
+        early learning, and daily connection.
+      </p>
+    </div>
+
+    <div className="bg-white/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">Faith-Based Care</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        Little Cove will include soft worship music at times, and parts of the
+        curriculum will be faith-based. The heart behind everything is to create
+        a loving, safe, and welcoming environment where children feel cared for
+        and supported.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section className="max-w-4xl mx-auto px-6 py-10">
+  <div className="bg-white/90 rounded-3xl shadow-sm border border-[#E5D3C5] p-8">
+    <h2 className={`${pacifico.className} text-4xl mb-6 text-center`}>
+      Quick Questions
+    </h2>
+
+    <div className="space-y-5 text-sm text-[#6B4F3A]">
+      <div>
+        <h3 className="font-semibold text-[#5C4033] mb-1">
+          Are spots limited?
+        </h3>
+        <p>
+          Yes. Spots will be limited as we get started, so joining the waitlist
+          is the best way to stay updated on availability.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-[#5C4033] mb-1">
+          Can I schedule a tour?
+        </h3>
+        <p>
+          Yes. Families can schedule a tour to see the space, ask questions, and
+          learn more about Little Cove before enrolling.
+        </p>
+      </div>
+
+      <div>
+        <h3 className="font-semibold text-[#5C4033] mb-1">
+          Where is Little Cove located?
+        </h3>
+        <p>
+          Little Cove Early Learning is located in Mount Ida, Arkansas and will
+          serve families in Mount Ida and the surrounding Montgomery County area.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 
         <section className="text-center py-12">
           <a

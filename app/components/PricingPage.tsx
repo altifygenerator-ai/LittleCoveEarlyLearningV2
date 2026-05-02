@@ -65,7 +65,19 @@ export default function PricingPage({ data }: { data: BusinessData }) {
           </div>
 
         </section>
+<section className="max-w-4xl mx-auto px-6 py-8">
+  <div className="bg-white/90 rounded-3xl shadow-sm border border-[#E5D3C5] p-8 text-center">
+    <h2 className={`${pacifico.className} text-4xl mb-4`}>
+      Simple Weekly Childcare Rates
+    </h2>
 
+    <p className="text-[#6B4F3A] leading-7 max-w-2xl mx-auto">
+      Our weekly rates are set up to keep things simple and clear for families.
+      Little Cove Early Learning is focused on dependable care, early learning,
+      daily structure, and a warm environment where children feel safe and loved.
+    </p>
+  </div>
+</section>
         {/* WHAT'S INCLUDED */}
         <section className="max-w-3xl mx-auto p-6">
 
@@ -77,7 +89,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
               <li>✔️ Small group, attentive care</li>
               <li>✔️ Structured daily schedule</li>
               <li>✔️ Learning through play + early education</li>
-              <li>✔️ Optional faith-based activities</li>
+              <li>✔️ Soft faith-based learning and worship music at times</li>
               <li>✔️ A cozy, home-like environment</li>
               <li>✔️ And of course… lots of love 🤍</li>
             </ul>
@@ -85,7 +97,28 @@ export default function PricingPage({ data }: { data: BusinessData }) {
           </div>
 
         </section>
+<section className="max-w-4xl mx-auto px-6 py-8">
+  <div className="grid md:grid-cols-2 gap-6">
+    <div className="bg-[#FFF8F1]/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">Why Rates May Vary</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        Childcare rates are based on age group because each stage needs a
+        different level of attention, routine, supervision, and hands-on care.
+        Infants require more one-on-one care, while older children are able to
+        participate in more structured group activities.
+      </p>
+    </div>
 
+    <div className="bg-white/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">Limited Availability</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        Spots are limited so Little Cove can keep care personal, safe, and
+        intentional. Joining the waitlist early is the best way to stay updated
+        on openings, tour options, and next steps for enrollment.
+      </p>
+    </div>
+  </div>
+</section>
         {/* PERSONAL NOTE */}
         <section className="max-w-3xl mx-auto p-6 text-center">
 

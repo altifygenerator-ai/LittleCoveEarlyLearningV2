@@ -93,6 +93,46 @@ export default function Modern({ data }: { data: BusinessData }) {
           </p>
 
         </section>
+        <section className="max-w-4xl mx-auto px-6 py-10">
+  <div className="bg-white/90 rounded-3xl shadow-sm border border-[#E5D3C5] p-8 text-center">
+    <h2 className={`${pacifico.className} text-4xl mb-4`}>
+      A Warm Place to Learn and Grow
+    </h2>
+
+    <p className="text-[#6B4F3A] leading-7 max-w-2xl mx-auto">
+      Little Cove Early Learning is being created as a safe, calm, and loving
+      space for children in Mount Ida and the surrounding Montgomery County area.
+      Our goal is to give families a place where their children feel cared for,
+      encouraged, and supported each day.
+    </p>
+  </div>
+</section>
+
+<section className="max-w-5xl mx-auto px-6 py-6 grid md:grid-cols-3 gap-6">
+  <div className="bg-[#FFF8F1]/90 p-6 rounded-2xl shadow-sm border border-[#E5D3C5]">
+    <h3 className="font-semibold mb-2">Safe & Nurturing</h3>
+    <p className="text-sm text-[#6B4F3A] leading-6">
+      We want every child to feel safe, loved, and comfortable from the moment
+      they walk through the door.
+    </p>
+  </div>
+
+  <div className="bg-white/90 p-6 rounded-2xl shadow-sm border border-[#E5D3C5]">
+    <h3 className="font-semibold mb-2">Early Learning</h3>
+    <p className="text-sm text-[#6B4F3A] leading-6">
+      Our days will include age-appropriate learning, play, structure, creativity,
+      and daily routines that help children grow with confidence.
+    </p>
+  </div>
+
+  <div className="bg-[#FFF8F1]/90 p-6 rounded-2xl shadow-sm border border-[#E5D3C5]">
+    <h3 className="font-semibold mb-2">Local Family Care</h3>
+    <p className="text-sm text-[#6B4F3A] leading-6">
+      We are proud to serve families in Mount Ida, Montgomery County, and nearby
+      communities with dependable childcare and a personal touch.
+    </p>
+  </div>
+</section>
         <section className="max-w-4xl mx-auto p-6 grid md:grid-cols-3 gap-6">
           {data.services.map((service, i) => (
             <div
@@ -123,7 +163,27 @@ export default function Modern({ data }: { data: BusinessData }) {
           
 
         </section> 
+<section className="max-w-4xl mx-auto px-6 py-10">
+  <div className="grid md:grid-cols-2 gap-6 items-stretch">
+    <div className="bg-white/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">For Parents</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        We know choosing childcare is a big decision. Little Cove is being built
+        to give parents peace of mind, clear communication, and a place where
+        their child is known, loved, and cared for.
+      </p>
+    </div>
 
+    <div className="bg-[#FFF8F1]/90 rounded-3xl border border-[#E5D3C5] p-8 shadow-sm">
+      <h2 className="text-2xl font-semibold mb-4">Now Building Little Cove</h2>
+      <p className="text-sm leading-7 text-[#6B4F3A]">
+        We are currently working hard behind the scenes to prepare the building,
+        complete the setup process, and create a space that feels warm, safe,
+        and welcoming for children and families.
+      </p>
+    </div>
+  </div>
+</section>
 <section className="max-w-4xl mx-auto p-6">
   <h2 className="text-2xl mb-6 text-center">Announcements</h2>
 
