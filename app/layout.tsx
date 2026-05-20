@@ -87,10 +87,6 @@ export default function RootLayout({
       <body className="min-h-screen flex flex-col">
         <main className="flex-grow">{children}</main>
 
-        <footer className="text-center text-sm py-6 opacity-70">
-          © {new Date().getFullYear()} Little Cove Early Learning • Mount Ida,
-          Arkansas • All rights reserved.
-        </footer>
 
         <Analytics />
       </body>
