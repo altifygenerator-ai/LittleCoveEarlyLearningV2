@@ -1,8 +1,13 @@
 "use client";
 
 import type { BusinessData } from "@/types/data";
+
 const pacifico = { className: "font-script" };
 const poppins = { className: "font-sans" };
+
+const enrollmentTourUrl = "https://calendly.com/littlecoveearlylearning/30min";
+const messengerUrl = "https://m.me/TheLittleCoveEarlyLearning";
+const phoneHref = "tel:5016721817";
 
 export default function EnrollPage({ data }: { data: BusinessData }) {
   return (
@@ -36,7 +41,7 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
           </nav>
 
           <a
-            href="tel:5016721817"
+            href={phoneHref}
             className="rounded-full bg-[#C98C6B] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#B87652]"
           >
             Call Us
@@ -71,24 +76,28 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#6B4F3A] md:mx-0 md:text-lg">
-                Message for an enrollment form, ask about current openings, or call with questions about care, rates, and next steps at {data.businessName}.
+                Schedule a quick tour, ask about current openings, or call with
+                questions about care, rates, and next steps at{" "}
+                {data.businessName}.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
                 <a
-                  href="https://m.me/TheLittleCoveEarlyLearning"
+                  href={enrollmentTourUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#B87652]"
                 >
-                  Message for a Form
+                  Schedule a Tour
                 </a>
 
                 <a
-                  href="tel:5016721817"
+                  href={messengerUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="rounded-full bg-[#4F3528] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#3D281F]"
                 >
-                  Call Us
+                  Message Little Cove
                 </a>
               </div>
 
@@ -145,27 +154,28 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
 
             <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#6B4F3A]">
               We want the process to feel simple and comfortable for families.
-              Message us for a form, tell us your child’s age group, and we’ll walk you through availability, paperwork, questions, and start dates.
+              Schedule a tour, tell us your child’s age group, and we’ll walk
+              through availability, paperwork, questions, and start dates.
             </p>
           </section>
 
           <section className="mx-auto grid max-w-6xl gap-5 px-5 py-8 md:grid-cols-3">
             <StepCard
               number="01"
-              title="Message for a Form"
-              text="Start by reaching out so we can learn more about your child, their age, and what kind of care your family is needing."
+              title="Schedule a Tour"
+              text="Pick a time to come see the space, ask questions, and get a feel for Little Cove."
             />
 
             <StepCard
               number="02"
-              title="Message for a Form"
-              text="Ask questions, see what openings are available, and get a feel for the space we’re building for local families."
+              title="Talk Through Availability"
+              text="We’ll go over your child’s age group, what kind of care your family needs, and what spots are currently available."
             />
 
             <StepCard
               number="03"
-              title="Save Your Spot"
-              text="Once availability is confirmed, we’ll walk you through the next steps for enrollment paperwork and start dates."
+              title="Finish the Paperwork"
+              text="Once availability is confirmed, we’ll help you with the enrollment form, start date, and next steps."
             />
           </section>
 
@@ -202,12 +212,12 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
                   </p>
 
                   <a
-                    href="https://m.me/TheLittleCoveEarlyLearning"
+                    href={enrollmentTourUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-7 inline-block rounded-full bg-[#C98C6B] px-7 py-3 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                   >
-                    Message for a Form
+                    Schedule a Tour
                   </a>
                 </div>
 
@@ -221,9 +231,8 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
                   </h3>
 
                   <p className="mt-4 text-sm leading-7 text-white/80">
-                    Spots will be limited as we get started, so joining the
-                    enrollment list or reaching out early is the best way to stay
-                    updated on availability.
+                    Spots will be limited as we get started, so reaching out
+                    early is the best way to stay updated on availability.
                   </p>
 
                   <div className="mt-6 grid gap-3 text-sm text-white/80">
@@ -231,10 +240,10 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
                       Ask about age groups and availability
                     </div>
                     <div className="rounded-2xl bg-white/10 p-4">
-                      Learn about tours and enrollment steps
+                      Schedule a tour and see the space
                     </div>
                     <div className="rounded-2xl bg-white/10 p-4">
-                      Get updates as Little Cove continues growing
+                      Get the enrollment form and next steps
                     </div>
                   </div>
                 </div>
@@ -258,7 +267,7 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
             <div className="grid gap-5 md:grid-cols-3">
               <QuestionCard
                 question="Are spots limited?"
-                answer="Yes. Spots will be limited as we get started, so joining the enrollment list is the best way to stay updated on availability."
+                answer="Yes. Spots will be limited as we get started, so reaching out early is the best way to stay updated on availability."
               />
 
               <QuestionCard
@@ -280,33 +289,40 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                Message us about enrollment and next steps.
+                Schedule a tour or message us about enrollment.
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#6B4F3A]">
-                Whether you’re ready to join the enrollment list or just want to ask a
+                Whether you’re ready to schedule a tour or just want to ask a
                 few questions, we’d be happy to hear from you.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
                 <a
-                  href="https://m.me/TheLittleCoveEarlyLearning"
+                  href={enrollmentTourUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                 >
-                  Message for a Form
+                  Schedule a Tour
                 </a>
 
                 <a
-                  href="https://m.me/TheLittleCoveEarlyLearning"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href={phoneHref}
                   className="rounded-full bg-[#4F3528] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#3D281F]"
                 >
                   Call Us
                 </a>
               </div>
+
+              <a
+                href={messengerUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-5 inline-block text-sm font-semibold text-[#9A684F] underline-offset-4 transition hover:text-[#4F3528] hover:underline"
+              >
+                Or message Little Cove on Facebook
+              </a>
             </div>
           </section>
 
@@ -336,8 +352,16 @@ export default function EnrollPage({ data }: { data: BusinessData }) {
                 <div className="mt-4 space-y-3 text-sm text-white/75">
                   <p>159 N George St</p>
                   <p>Mount Ida, AR 71957</p>
+
                   <a
-                    href="https://m.me/TheLittleCoveEarlyLearning"
+                    href={phoneHref}
+                    className="block transition hover:text-[#F3C7A7]"
+                  >
+                    501-672-1817
+                  </a>
+
+                  <a
+                    href={messengerUrl}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block transition hover:text-[#F3C7A7]"
