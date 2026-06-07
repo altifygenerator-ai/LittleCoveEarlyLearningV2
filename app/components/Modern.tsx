@@ -1,8 +1,6 @@
 import type { BusinessData } from "@/types/data";
-import { Pacifico, Poppins } from "next/font/google";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700"] });
+const pacifico = { className: "font-script" };
+const poppins = { className: "font-sans" };
 
 export default function Modern({ data }: { data: BusinessData }) {
   return (
@@ -78,13 +76,11 @@ export default function Modern({ data }: { data: BusinessData }) {
               </p>
 
               <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-[-0.03em] text-[#4A3024] md:mx-0 md:text-6xl">
-                A cozy faith-based daycare and early learning center in Mount Ida.
+                Not just a daycare. A place kids can actually be excited about.
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#6B4F3A] md:mx-0 md:text-lg">
-                {data.tagline} Little Cove Early Learning is being created for
-                families who want safe, loving childcare, steady routines, and a
-                warm place for little ones to learn and grow.
+                {data.tagline}
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
@@ -92,11 +88,11 @@ export default function Modern({ data }: { data: BusinessData }) {
                   href="/enroll"
                   className="rounded-full bg-[#C98C6B] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#B87652]"
                 >
-                  Enroll My Child
+                  Get Enrollment Info
                 </a>
 
                 <a
-                  href="tel:8703425563"
+                  href="tel:5016721817"
                   className="rounded-full bg-[#4F3528] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#3D281F]"
                 >
                   Call Now
@@ -104,21 +100,21 @@ export default function Modern({ data }: { data: BusinessData }) {
               </div>
 
               <p className="mt-5 text-sm font-medium text-[#8A6D5A]">
-                Now accepting early interest + waitlist
+                Enrollment forms are going out now
               </p>
             </div>
 
             <div className="mx-auto w-full max-w-md">
               <div className="rounded-[2rem] border border-[#E5D3C5] bg-white/80 p-5 shadow-xl shadow-[#9C6B4F]/10 backdrop-blur">
                 <img
-                  src="/images/logo.png"
-                  alt="Little Cove Early Learning logo"
-                  className="mx-auto h-auto max-h-[320px] w-full object-contain"
+                  src="/images/updates/classroom-wide.jpg"
+                  alt="Little Cove classroom set up with learning centers"
+                  className="mx-auto h-[320px] w-full rounded-[1.5rem] object-cover"
                 />
 
                 <div className="mt-5 rounded-3xl bg-[#FFF8F1] p-5 text-center">
                   <p className="text-sm font-semibold text-[#4F3528]">
-                    Daycare & Early Learning Center
+                    Opening updates are here
                   </p>
                   <p className="mt-1 text-sm text-[#7B5F4D]">
                     Mount Ida, Arkansas
@@ -131,10 +127,10 @@ export default function Modern({ data }: { data: BusinessData }) {
           <section className="mx-auto max-w-6xl px-5 pb-10">
             <div className="grid gap-3 rounded-[2rem] border border-[#E5D3C5] bg-white/85 p-4 shadow-sm md:grid-cols-4">
               {[
-                "Mount Ida, AR",
-                "Faith-based care",
-                "Early learning routines",
-                "Serving Montgomery County",
+                "159 N George St",
+                "Open Mon-Fri",
+                "6:00 AM - 5:30 PM",
+                "Infants, toddlers & Pre-K",
               ].map((item) => (
                 <div
                   key={item}
@@ -148,36 +144,59 @@ export default function Modern({ data }: { data: BusinessData }) {
 
           <section className="mx-auto max-w-5xl px-5 py-12 text-center">
             <p className={`${pacifico.className} text-3xl text-[#C98C6B] md:text-4xl`}>
-              Childcare with a personal touch
+              What we’re building
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-5xl">
-              A Warm Place to Learn and Grow
+              Cool kid hangout, learning included.
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#6B4F3A]">
-              Little Cove Early Learning is being created as a safe, calm, and
-              loving space for children in Mount Ida and the surrounding
-              Montgomery County area. Our goal is to give families a place where
-              their children feel cared for, encouraged, and supported each day.
+              Little Cove is being built for the babies, toddlers, and pre-k kiddos of Mount Ida. Think cozy rooms, learning centers, books, pretend play, daily routines, and a place that feels more like a little home than a cold classroom.
             </p>
           </section>
 
           <section className="mx-auto grid max-w-6xl gap-5 px-5 py-8 md:grid-cols-3">
             <ValueCard
-              title="Safe & Nurturing"
-              text="We want every child to feel safe, loved, and comfortable from the moment they walk through the door."
+              title="Safe, loving care"
+              text="The first goal is simple: every child should feel safe, known, and loved when they walk through the door."
             />
 
             <ValueCard
-              title="Early Learning"
-              text="Our days will include age-appropriate learning, play, structure, creativity, and daily routines that help children grow with confidence."
+              title="Learning through play"
+              text="The rooms are set up for hands-on learning, stories, music, art, pretend play, and all the little moments that help kids grow."
             />
 
             <ValueCard
-              title="Local Family Care"
-              text="We are proud to serve families in Mount Ida, Montgomery County, and nearby communities with dependable childcare and a personal touch."
+              title="A place for local families"
+              text="Little Cove is here for Mount Ida and Montgomery County families who need dependable care with a real personal touch."
             />
+          </section>
+
+          <section className="mx-auto max-w-6xl px-5 py-12">
+            <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr] md:items-center">
+              <div>
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#C98C6B]">
+                  Take a peek
+                </p>
+                <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
+                  The space is finally starting to feel like Little Cove.
+                </h2>
+                <p className="mt-5 leading-8 text-[#6B4F3A]">
+                  We’ve been working hard behind the scenes getting rooms ready,
+                  setting up centers, adding color, and making the building feel
+                  warm for opening. It may still look a little plain in spots,
+                  but the cozy touches are coming.
+                </p>
+              </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {["/images/updates/classroom-play-area.jpg", "/images/updates/classroom-big-room.jpg", "/images/updates/window-bible-art.jpg", "/images/updates/window-bear-art.jpg"].map((src, i) => (
+                  <a key={src} href={src} target="_blank" rel="noopener noreferrer" className="group overflow-hidden rounded-3xl border border-[#E5D3C5] bg-white p-2 shadow-sm">
+                    <img src={src} alt={`Little Cove update photo ${i + 1}`} className="h-44 w-full rounded-2xl object-cover transition duration-300 group-hover:scale-[1.03]" />
+                  </a>
+                ))}
+              </div>
+            </div>
           </section>
 
           <section className="mx-auto max-w-6xl px-5 py-14">
@@ -186,12 +205,10 @@ export default function Modern({ data }: { data: BusinessData }) {
                 Care options
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                Built for growing families.
+                Infants, toddlers, and Pre-K.
               </h2>
               <p className="mt-4 leading-7 text-[#6B4F3A]">
-                Little Cove is designed to support local families with dependable
-                childcare, early learning, and a warm daily environment for
-                children.
+                Weekly care is set up by age group. Current posted rates are $175/week for infants, $165/week for toddlers, and $150/week for preschool / pre-k.
               </p>
             </div>
 
@@ -211,7 +228,7 @@ export default function Modern({ data }: { data: BusinessData }) {
             <div className="relative">
               <div className="absolute -left-3 -top-3 hidden h-full w-full rounded-[2rem] bg-[#EFD6BF] md:block" />
               <img
-                src="/images/interior.png"
+                src="/images/updates/window-art-collage.jpg"
                 alt="Inside Little Cove Early Learning in Mount Ida Arkansas"
                 className="relative h-[280px] w-full rounded-[2rem] object-cover shadow-lg md:h-[430px]"
               />
@@ -222,7 +239,7 @@ export default function Modern({ data }: { data: BusinessData }) {
                 What matters most
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                A calm, caring place for little ones.
+                A lot of love, a lot of work, and yes, a playground.
               </h2>
 
               <div className="mt-6 grid gap-4">
@@ -241,13 +258,13 @@ export default function Modern({ data }: { data: BusinessData }) {
           <section className="mx-auto max-w-6xl px-5 py-12">
             <div className="grid gap-6 md:grid-cols-2">
               <InfoPanel
-                title="For Parents"
-                text="We know choosing childcare is a big decision. Little Cove is being built to give parents peace of mind, clear communication, and a place where their child is known, loved, and cared for."
+                title="For parents"
+                text="Choosing childcare is a big deal. Send a message, ask the questions, come see the space, and we’ll walk through the next steps without making it complicated."
               />
 
               <InfoPanel
-                title="Now Building Little Cove"
-                text="We are currently working hard behind the scenes to prepare the building, complete the setup process, and create a space that feels warm, safe, and welcoming for children and families."
+                title="Outdoor play update"
+                text="Yes, there is a fenced-in playground area right across the alley from the building. Inside is the first priority for opening, but outdoor play is part of the plan."
               />
             </div>
           </section>
@@ -255,7 +272,7 @@ export default function Modern({ data }: { data: BusinessData }) {
           <section className="mx-auto max-w-6xl px-5 py-12">
             <div className="mb-8 text-center">
               <p className={`${pacifico.className} text-3xl text-[#C98C6B]`}>
-                What’s happening
+                Little Cove updates
               </p>
               <h2 className="mt-2 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
                 Announcements
@@ -288,10 +305,10 @@ export default function Modern({ data }: { data: BusinessData }) {
           <section className="mx-auto max-w-6xl px-5 py-12">
             <div className="mb-8 text-center">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#C98C6B]">
-                Parent feedback
+                Community love
               </p>
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                What Parents Are Saying
+                What People Are Saying
               </h2>
             </div>
 
@@ -377,7 +394,7 @@ export default function Modern({ data }: { data: BusinessData }) {
               <div className="overflow-hidden rounded-[2rem] border border-[#E5D3C5] bg-white p-3 shadow-sm">
                 <iframe
                   title="Little Cove Early Learning location map"
-                  src="https://www.google.com/maps?q=146+S+George+St+Mount+Ida+AR+71957&output=embed"
+                  src="https://www.google.com/maps?q=159+N+George+St+Mount+Ida+AR+71957&output=embed"
                   className="h-72 w-full rounded-[1.5rem] md:h-96"
                   loading="lazy"
                 />
@@ -400,7 +417,7 @@ export default function Modern({ data }: { data: BusinessData }) {
 
                 <div className="mt-6 rounded-2xl bg-[#FFF8F1] p-5">
                   <p className="font-bold text-[#4A3024]">
-                    146 S George St
+                    159 N George St
                   </p>
                   <p className="text-sm text-[#6B4F3A]">
                     Mount Ida, AR 71957
@@ -421,16 +438,14 @@ export default function Modern({ data }: { data: BusinessData }) {
 
           <section className="mx-auto max-w-5xl px-5 py-10 text-center">
             <h2 className="text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-              A Local Daycare You Can Trust
+              Little Cove Early Learning in Mount Ida
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl leading-8 text-[#6B4F3A]">
-              Little Cove Early Learning is a daycare and early learning center
-              in Mount Ida, Arkansas, created for local families who want
-              dependable childcare in a warm, faith-based environment. We serve
-              families throughout Mount Ida, Montgomery County, and nearby
-              communities with a focus on safety, early learning, daily routines,
-              and personal care for each child.
+              Little Cove Early Learning is located at 159 N George St in Mount
+              Ida, Arkansas. We serve local families with infant care, toddler
+              care, preschool / pre-k, early learning routines, faith-based pieces,
+              and a space built with a lot of heart.
             </p>
           </section>
 
@@ -441,12 +456,12 @@ export default function Modern({ data }: { data: BusinessData }) {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                Ask about enrollment, pricing, and next steps.
+                Need an enrollment form?
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#6B4F3A]">
-                Send us a message or give us a call to learn more about Little
-                Cove Early Learning and current availability.
+                Enrollment forms are going out now. Current spots are limited,
+                so message or call if you need one.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
@@ -454,11 +469,11 @@ export default function Modern({ data }: { data: BusinessData }) {
                   href="/enroll"
                   className="rounded-full bg-[#C98C6B] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                 >
-                  Enroll My Child
+                  Get Enrollment Info
                 </a>
 
                 <a
-                  href="tel:8703425563"
+                  href="tel:5016721817"
                   className="rounded-full bg-[#4F3528] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#3D281F]"
                 >
                   Call Now
@@ -480,9 +495,7 @@ export default function Modern({ data }: { data: BusinessData }) {
                 </h2>
 
                 <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-                  A cozy faith-based daycare and early learning center being
-                  created for families in Mount Ida, Montgomery County, and the
-                  surrounding communities.
+                  A cozy, faith-based daycare and early learning center in Mount Ida, built with a lot of love for local families.
                 </p>
               </div>
 
@@ -492,13 +505,19 @@ export default function Modern({ data }: { data: BusinessData }) {
                 </h3>
 
                 <div className="mt-4 space-y-3 text-sm text-white/75">
-                  <p>146 S George St</p>
+                  <p>159 N George St</p>
                   <p>Mount Ida, AR 71957</p>
                   <a
-                    href="tel:8703425563"
+                    href="tel:5016721817"
                     className="block transition hover:text-[#F3C7A7]"
                   >
-                    870-342-5563
+                    501-672-1817
+                  </a>
+                  <a
+                    href="mailto:littlecoveearlylearning@outlook.com"
+                    className="block transition hover:text-[#F3C7A7]"
+                  >
+                    littlecoveearlylearning@outlook.com
                   </a>
                 </div>
               </div>

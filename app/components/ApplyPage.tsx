@@ -1,11 +1,6 @@
 import type { BusinessData } from "@/types/data";
-import { Pacifico, Poppins } from "next/font/google";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+const pacifico = { className: "font-script" };
+const poppins = { className: "font-sans" };
 
 export default function ApplyPage({ data }: { data: BusinessData }) {
   return (
@@ -315,7 +310,7 @@ export default function ApplyPage({ data }: { data: BusinessData }) {
                 </h3>
 
                 <div className="mt-4 space-y-3 text-sm text-white/75">
-                  <p>146 S George St</p>
+                  <p>159 N George St</p>
                   <p>Mount Ida, AR 71957</p>
                   <a
                     href="https://m.me/TheLittleCoveEarlyLearning"

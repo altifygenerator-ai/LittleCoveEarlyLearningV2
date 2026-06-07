@@ -1,11 +1,6 @@
 import type { BusinessData } from "@/types/data";
-import { Pacifico, Poppins } from "next/font/google";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+const pacifico = { className: "font-script" };
+const poppins = { className: "font-sans" };
 
 export default function RenovationPage({ data }: { data: BusinessData }) {
   return (
@@ -44,7 +39,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
             rel="noopener noreferrer"
             className="rounded-full bg-[#C98C6B] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#B87652]"
           >
-            Join Waitlist
+            Enrollment Forms
           </a>
         </div>
       </header>
@@ -72,12 +67,11 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
               </p>
 
               <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-[-0.03em] text-[#4A3024] md:mx-0 md:text-6xl">
-                Follow along as Little Cove comes to life.
+                Little Cove is getting so close.
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#6B4F3A] md:mx-0 md:text-lg">
-                Follow along as we transform our space into a warm, safe, and
-                beautiful place for your children to learn and grow.
+                The state visit is scheduled, forms are going out, and we are working hard to get every room ready for opening.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
@@ -87,7 +81,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#B87652]"
                 >
-                  Join the Waitlist
+                  Message for a Form
                 </a>
 
                 <a
@@ -126,10 +120,10 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
           <section className="mx-auto max-w-6xl px-5 pb-10">
             <div className="grid gap-3 rounded-[2rem] border border-[#E5D3C5] bg-white/85 p-4 shadow-sm md:grid-cols-4">
               {[
-                "Building purchased",
+                "State visit scheduled",
                 "Space updates",
-                "Tour progress",
-                "Opening soon",
+                "Classrooms coming together",
+                "Forms going out",
               ].map((item) => (
                 <div
                   key={item}
@@ -149,13 +143,11 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-5xl">
-              Turning a dream into a daycare.
+              Turning a building into Little Cove.
             </h2>
 
             <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#6B4F3A]">
-              Little Cove Early Learning is being created with a lot of love,
-              prayer, work, and community support. This page will keep families
-              updated as the space comes together.
+              Little Cove is being built with a lot of love, prayer, work, and help from the community. This is where families can see the rooms, updates, forms, playground notes, and all the little details as opening gets closer.
             </p>
           </section>
 
@@ -211,24 +203,47 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
               </RenovationUpdate>
 
               <RenovationUpdate
-                title="Update 3"
-                label="Coming Soon"
-                text="Coming Soon!"
+                title="Classrooms are coming together"
+                label="Room update"
+                text="Y’all, this is not just a daycare. This is basically the cool kid hangout with learning, of course. The rooms are getting centers, rugs, books, pretend play, and all the little pieces that make it feel like Little Cove."
               >
-                <div className="flex h-[280px] items-center justify-center rounded-[2rem] border border-dashed border-[#D9BFA8] bg-white/80 p-8 text-center text-[#A38B7A] shadow-sm md:h-[390px]">
-                  More renovation photos coming soon
+                <div className="grid grid-cols-2 gap-3">
+                  {["/images/updates/classroom-wide.jpg", "/images/updates/classroom-play-area.jpg", "/images/updates/classroom-big-room.jpg", "/images/updates/look-what-were-learning.jpg"].map((src, i) => (
+                    <a
+                      key={src}
+                      href={src}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group block overflow-hidden rounded-2xl border border-[#E5D3C5] bg-white shadow-sm"
+                    >
+                      <img
+                        src={src}
+                        alt={`Little Cove classroom update ${i + 1}`}
+                        className="h-[130px] w-full object-cover transition duration-300 group-hover:scale-105 md:h-[180px]"
+                      />
+                    </a>
+                  ))}
                 </div>
               </RenovationUpdate>
 
               <RenovationUpdate
-                title="Update 4"
-                label="Coming Soon"
-                text="Coming Soon!"
+                title="The windows got some love"
+                label="Painted windows"
+                text="The front windows have color, warmth, and the sweetest welcome now. Shoutout to the people helping make this building feel like home before the doors even open."
                 reverse
               >
-                <div className="flex h-[280px] items-center justify-center rounded-[2rem] border border-dashed border-[#D9BFA8] bg-white/80 p-8 text-center text-[#A38B7A] shadow-sm md:h-[390px]">
-                  More renovation photos coming soon
-                </div>
+                <a
+                  href="/images/updates/window-art-collage.jpg"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="group block overflow-hidden rounded-[2rem] border border-[#E5D3C5] bg-white p-2 shadow-sm"
+                >
+                  <img
+                    src="/images/updates/window-art-collage.jpg"
+                    alt="Little Cove painted window art"
+                    className="h-[280px] w-full rounded-[1.5rem] object-cover transition duration-300 group-hover:scale-[1.02] md:h-[390px]"
+                  />
+                </a>
               </RenovationUpdate>
             </div>
           </section>
@@ -259,7 +274,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
                     rel="noopener noreferrer"
                     className="mt-7 inline-block rounded-full bg-[#C98C6B] px-7 py-3 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                   >
-                    Join the Waitlist
+                    Message for a Form
                   </a>
                 </div>
 
@@ -301,7 +316,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                Ask about tours, updates, and waitlist details.
+                Ask about tours, updates, and enrollment list details.
               </h2>
 
               <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#6B4F3A]">
@@ -317,7 +332,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                 >
-                  Join the Waitlist
+                  Message for a Form
                 </a>
 
                 <a
@@ -354,7 +369,7 @@ export default function RenovationPage({ data }: { data: BusinessData }) {
                 </h3>
 
                 <div className="mt-4 space-y-3 text-sm text-white/75">
-                  <p>146 S George St</p>
+                  <p>159 N George St</p>
                   <p>Mount Ida, AR 71957</p>
                   <a
                     href="https://m.me/TheLittleCoveEarlyLearning"

@@ -1,43 +1,53 @@
 {
-  "businessName": "Little Cove",
-  "tagline": "A cozy, faith-based childcare experience",
+  "businessName": "Little Cove Early Learning",
+  "tagline": "Not just a daycare. A cool little kid hangout with learning, love, and a whole lot of heart.",
 
   "announcement": {
     "enabled": true,
-    "text": "Booking is now Open!",
-    "link": "https://m.me/LittleCoveEarlyLearning"
+    "text": "Enrollment forms are going out now. Current openings: 1 infant spot and 2 toddler spots.",
+    "link": "/enroll"
   },
 
-"announcements": [
-  {
-  "title": "We’re getting close 🤍",
-  "text": "We officially close on our home this Tuesday, which means Little Cove Early Learning will finally have my full-time focus, energy, and heart. I’ll be in Mt. Ida full time and working daily to bring this space to life for local families. As I continue planning, I wanted to share an important update. Little Cove will include soft worship music at times, and parts of the curriculum will be faith-based. My goal has always been to create a loving, safe, and welcoming environment for every child, and that remains at the center of everything I’m building. I understand this may not be the right fit for every family, and I truly respect that. Thank you for the continued support and patience as Little Cove comes together. I can’t wait to open the doors ❤️",
-  "date": "May 2026"
-},
-  {
-    "title": "We’re almost ready 💛",
-    "text": "We are literally SO close! I’ve finished all my director classes, renewed my CPR/AED certification, and applied for Better Beginnings so we can accept vouchers. We’re getting ready to start transforming the building into our Little Cove home away from home. The amount of support since day one has meant everything to me — I truly wouldn’t have made it this far without y’all. I can’t wait to make Mount Ida proud 🫶❤️",
-    "date": "April 2026"
-  }
-],
-
-  "services": ["Infants 🍼", "Toddlers 🧸", "Pre-K 🎨"],
-
-  "features": [
-    "Boutique-style care",
-    "Coffee bar for parents",
-    "Calm environment",
-    "Faith-centered"
+  "announcements": [
+    {
+      "title": "The time has come",
+      "text": "Enrollment forms are going out to families. Right now Little Cove has room for 1 more infant and 2 more toddlers. If you need a form, send a message and we’ll get you pointed in the right direction.",
+      "date": "June 2026"
+    },
+    {
+      "title": "State visit is finally on the schedule",
+      "text": "The state is coming out for our pre-licensing visit, which is a huge step. We’re still decorating, cleaning, sorting classrooms, and making the space feel warm and welcoming. It may look a little plain at first, but the cozy touches are coming.",
+      "date": "June 2026"
+    },
+    {
+      "title": "Yes, we have a playground coming",
+      "text": "The fenced-in playground area is right across the alley from the building. Our focus is getting everything ready inside for opening, but outdoor play is absolutely part of the plan.",
+      "date": "May 2026"
+    }
   ],
 
-  "facebookUsername": "LittleCoveEarlyLearning",
-  "mapQuery": "Mt Ida Arkansas",
-  "hours": ["Mon-Fri 6AM-6PM"],
+  "services": ["Infants 🍼", "Toddlers 🧸", "Preschool / Pre-K 🎨"],
+
+  "features": [
+    "A warm, home-away-from-home feel",
+    "Learning centers, pretend play, books, and hands-on activities",
+    "Faith-based pieces, soft worship music at times, and lots of love",
+    "A fenced playground area planned right across the alley"
+  ],
+
+  "facebookUsername": "TheLittleCoveEarlyLearning",
+  "mapQuery": "159 N George St Mount Ida AR 71957",
+  "hours": ["Monday – Friday", "6:00 AM – 5:30 PM"],
 
   "reviews": [
     {
-      "name": "Your Reviews Here!",
-      "text": "Coming Soon!",
+      "name": "Community note",
+      "text": "Our community needs a place like this and I know it’s going to thrive!",
+      "rating": 5
+    },
+    {
+      "name": "Little Cove family",
+      "text": "The support, encouragement, and excitement around Little Cove has meant everything. We are getting so close.",
       "rating": 5
     }
   ]

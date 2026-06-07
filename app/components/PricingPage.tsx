@@ -1,11 +1,6 @@
 import type { BusinessData } from "@/types/data";
-import { Pacifico, Poppins } from "next/font/google";
-
-const pacifico = Pacifico({ subsets: ["latin"], weight: ["400"] });
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
+const pacifico = { className: "font-script" };
+const poppins = { className: "font-sans" };
 
 export default function PricingPage({ data }: { data: BusinessData }) {
   return (
@@ -44,7 +39,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
             rel="noopener noreferrer"
             className="rounded-full bg-[#C98C6B] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#B87652]"
           >
-            Join Waitlist
+            Enrollment Forms
           </a>
         </div>
       </header>
@@ -76,8 +71,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
               </h1>
 
               <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#6B4F3A] md:mx-0 md:text-lg">
-                Simple, transparent weekly rates designed to provide
-                high-quality, personalized care at {data.businessName}.
+                Infant, toddler, and preschool rates posted clearly so families know what to expect.
               </p>
 
               <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
@@ -87,7 +81,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#B87652]"
                 >
-                  Message to Join Waitlist
+                  Message to Enrollment Forms
                 </a>
 
                 <a
@@ -145,7 +139,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
             <p
               className={`${pacifico.className} text-3xl text-[#C98C6B] md:text-4xl`}
             >
-              Simple Weekly Childcare Rates
+              Weekly rates
             </p>
 
             <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-5xl">
@@ -171,7 +165,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
                   </p>
 
                   <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                    Care that feels personal, safe, and steady.
+                    Simple rates, no guessing.
                   </h2>
 
                   <p className="mt-5 leading-8 text-[#6B4F3A]">
@@ -208,7 +202,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
 
             <InfoPanel
               title="Limited Availability"
-              text="Spots are limited so Little Cove can keep care personal, safe, and intentional. Joining the waitlist early is the best way to stay updated on openings, tour options, and next steps for enrollment."
+              text="Spots are limited as Little Cove gets started. Send a message if you need an enrollment form or want to check what age groups still have room."
             />
           </section>
 
@@ -254,7 +248,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
                   rel="noopener noreferrer"
                   className="rounded-full bg-[#C98C6B] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
                 >
-                  Message to Join Waitlist
+                  Message to Enrollment Forms
                 </a>
 
                 <a
@@ -291,7 +285,7 @@ export default function PricingPage({ data }: { data: BusinessData }) {
                 </h3>
 
                 <div className="mt-4 space-y-3 text-sm text-white/75">
-                  <p>146 S George St</p>
+                  <p>159 N George St</p>
                   <p>Mount Ida, AR 71957</p>
                   <a
                     href="https://m.me/TheLittleCoveEarlyLearning"

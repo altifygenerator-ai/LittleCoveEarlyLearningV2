@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Little Cove Early Learning is a faith-based daycare in Mount Ida, Arkansas offering safe, nurturing childcare for infants, toddlers, and preschool-age children.",
+    "Little Cove Early Learning is a faith-based daycare and early learning center in Mount Ida, Arkansas for infants, toddlers, and preschool / pre-k children.",
 
   keywords: [
     "daycare Mount Ida AR",
@@ -37,14 +37,14 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Little Cove Early Learning | Daycare in Mount Ida, AR",
     description:
-      "Faith-based childcare in Mount Ida, Arkansas for infants, toddlers, and preschoolers in a safe, nurturing environment.",
+      "Faith-based childcare in Mount Ida, Arkansas for infants, toddlers, and preschool / pre-k children.",
     url: siteUrl,
     siteName: "Little Cove Early Learning",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/images/og-cover.jpg",
+        url: "/images/updates/classroom-wide.jpg",
         width: 1200,
         height: 630,
         alt: "Little Cove Early Learning daycare in Mount Ida Arkansas",
@@ -56,8 +56,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Little Cove Early Learning | Mount Ida, AR Daycare",
     description:
-      "Faith-based daycare and childcare for infants, toddlers, and preschoolers in Mount Ida, Arkansas.",
-    images: ["/images/og-cover.jpg"],
+      "Faith-based daycare and early learning in Mount Ida, Arkansas for infants, toddlers, and preschool / pre-k children.",
+    images: ["/images/updates/classroom-wide.jpg"],
   },
 
   verification: {
