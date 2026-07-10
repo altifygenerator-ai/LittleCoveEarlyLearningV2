@@ -1,15 +1,19 @@
+import type { Metadata } from "next";
 import RenovationPage from "@/app/components/RenovationPage";
 import data from "@/content/content.json";
-export const metadata = {
-  title: "New Daycare Facility in Mount Ida | Little Cove Updates",
+
+export const metadata: Metadata = {
+  title: "Our Story & Center Updates | Little Cove",
   description:
-    "Follow the progress of Little Cove Early Learning’s new daycare facility in Mount Ida, Arkansas. Expanding to serve more local families.",
+    "See how Little Cove Early Learning at 144 George St in Mount Ida grew from a dream into a warm early learning center for local families.",
   keywords: [
-    "new daycare Mount Ida Arkansas",
+    "Little Cove Early Learning updates",
+    "daycare Mount Ida Arkansas",
     "child care center Mount Ida",
-    "daycare opening Mount Ida",
   ],
+  alternates: { canonical: "/renovation" },
 };
+
 export default function Page() {
   return <RenovationPage data={data} />;
 }

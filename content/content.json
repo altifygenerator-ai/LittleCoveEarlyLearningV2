@@ -1,44 +1,45 @@
 {
   "businessName": "Little Cove Early Learning",
-  "tagline": "Not just a daycare. A cool little kid hangout with learning, love, and a whole lot of heart.",
-
+  "tagline": "A warm, faith-based place where little learners can play, grow, and feel known every day.",
   "announcement": {
     "enabled": true,
-    "text": "Enrollment forms are going out now. Current openings: 1 infant spot and 2 toddler spots.",
+    "text": "Now accepting enrollment packets — toddler and Pre-K openings are currently available.",
     "link": "/enroll"
   },
-
   "announcements": [
     {
-      "title": "The time has come",
-      "text": "Enrollment forms are going out to families. Right now Little Cove has room for 1 more infant and 2 more toddlers. If you need a form, send a message and we’ll get you pointed in the right direction.",
-      "date": "June 2026"
+      "title": "Toddler and Pre-K enrollment is open",
+      "text": "Little Cove is currently accepting enrollment packets for the toddler classroom and Pre-K for ages 3–5. Spots are limited and are reserved in the order completed enrollment steps are received.",
+      "date": "July 2026"
     },
     {
-      "title": "State visit is finally on the schedule",
-      "text": "The state is coming out for our pre-licensing visit, which is a huge step. We’re still decorating, cleaning, sorting classrooms, and making the space feel warm and welcoming. It may look a little plain at first, but the cozy touches are coming.",
-      "date": "June 2026"
+      "title": "Meet Kaitlyn, our Lead Teacher",
+      "text": "Kaitlyn brings classroom experience, a heart for young learners, and a warm, encouraging approach to Little Cove. She is especially excited to help create a safe, fun, and loving classroom where every child can learn and grow.",
+      "date": "July 2026"
     },
     {
-      "title": "Yes, we have a playground coming",
-      "text": "The fenced-in playground area is right across the alley from the building. Our focus is getting everything ready inside for opening, but outdoor play is absolutely part of the plan.",
-      "date": "May 2026"
+      "title": "Enrollment packets and next steps",
+      "text": "Families can message Little Cove for an enrollment packet or schedule a tour. After a packet is submitted and availability is confirmed, the $35 enrollment fee is the final step to reserve a child’s spot.",
+      "date": "July 2026"
     }
   ],
-
-  "services": ["Infants 🍼", "Toddlers 🧸", "Preschool / Pre-K 🎨"],
-
-  "features": [
-    "A warm, home-away-from-home feel",
-    "Learning centers, pretend play, books, and hands-on activities",
-    "Faith-based pieces, soft worship music at times, and lots of love",
-    "A fenced playground area planned right across the alley"
+  "services": [
+    "Infants 🍼",
+    "Toddlers 🧸",
+    "Preschool / Pre-K 🎨"
   ],
-
+  "features": [
+    "A warm, nurturing environment where children can feel comfortable and known",
+    "Hands-on learning through play, books, art, music, and daily routines",
+    "Faith-based values woven into a welcoming, age-appropriate setting",
+    "Small class sizes and personal attention for each little learner"
+  ],
   "facebookUsername": "TheLittleCoveEarlyLearning",
-  "mapQuery": "159 N George St Mount Ida AR 71957",
-  "hours": ["Monday – Friday", "6:00 AM – 5:30 PM"],
-
+  "mapQuery": "144 George St Mount Ida AR 71957",
+  "hours": [
+    "Monday – Friday",
+    "6:00 AM – 5:30 PM"
+  ],
   "reviews": [
     {
       "name": "Community note",

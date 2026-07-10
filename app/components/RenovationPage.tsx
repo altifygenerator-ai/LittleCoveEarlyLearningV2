@@ -1,471 +1,173 @@
 import type { BusinessData } from "@/types/data";
-const pacifico = { className: "font-script" };
-const poppins = { className: "font-sans" };
+import { ClosingCTA, PageHero, SectionHeading, SiteFooter, SiteHeader } from "@/app/components/SiteChrome";
+
+const messengerUrl = "https://m.me/TheLittleCoveEarlyLearning";
 
 export default function RenovationPage({ data }: { data: BusinessData }) {
   return (
-    <main
-      className={`${poppins.className} min-h-screen overflow-x-hidden bg-[#FBF6EF] text-[#4F3528]`}
-    >
-      <header className="sticky top-0 z-40 border-b border-[#EAD9C8] bg-[#FBF6EF]/90 backdrop-blur-md">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-5 py-4">
-          <a href="/" className="leading-tight">
-            <p className="text-base font-bold tracking-tight md:text-lg">
-              Little Cove
-            </p>
-            <p className="text-xs text-[#8A6D5A] md:text-sm">
-              Early Learning
-            </p>
-          </a>
+    <main className="site-page">
+      <SiteHeader />
+      <PageHero
+        eyebrow="The Little Cove story"
+        title="A dream becoming a place families can walk into."
+        text="Follow the building, classroom, window, and learning-space updates that have turned 144 George St into Little Cove Early Learning."
+        image="/images/updates/window-art-collage.jpg"
+        imageAlt="Little Cove painted window artwork"
+        primary={{ href: messengerUrl, label: "Message Little Cove", external: true }}
+        secondary={{ href: "/enroll", label: "Enrollment Information" }}
+        note="Built with prayer, hard work, community support, and a lot of heart."
+      />
 
-          <nav className="hidden items-center gap-7 text-sm font-medium text-[#6B4F3A] md:flex">
-            <a href="/" className="transition hover:text-[#B87652]">
-              Home
-            </a>
-            <a href="/enroll" className="transition hover:text-[#B87652]">
-              Enroll
-            </a>
-            <a href="/pricing" className="transition hover:text-[#B87652]">
-              Pricing
-            </a>
-            <a href="/apply" className="transition hover:text-[#B87652]">
-              Careers
-            </a>
-          </nav>
-
-          <a
-            href="https://m.me/TheLittleCoveEarlyLearning"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full bg-[#C98C6B] px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-[#B87652]"
-          >
-            Enrollment Forms
-          </a>
+      <section className="site-container relative z-10 -mt-1 pb-5 pt-6">
+        <div className="stat-ribbon">
+          <div><strong>The building</strong><span>The place where the dream became real</span></div>
+          <div><strong>Classroom spaces</strong><span>Rooms shaped around play and learning</span></div>
+          <div><strong>Painted windows</strong><span>A warm welcome before families walk in</span></div>
+          <div><strong>Learning centers</strong><span>Books, art, pretend play, and routines</span></div>
         </div>
-      </header>
+      </section>
 
-      <div className="relative overflow-hidden bg-[#FBF6EF]">
-        <div
-          className="pointer-events-none absolute inset-0 opacity-25"
-          style={{
-            backgroundImage: "url('/images/clouds.png')",
-            backgroundRepeat: "repeat",
-            backgroundSize: "900px auto",
-            backgroundPosition: "top center",
-          }}
+      <section className="section-space site-container">
+        <SectionHeading
+          eyebrow="The story so far"
+          title="Turning a building into Little Cove."
+          text="Little Cove has come together through prayer, work, community help, and the belief that local families deserve a warm, dependable place for their children. These updates show the rooms, details, and small milestones along the way."
+          align="center"
         />
 
-        <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#FBF6EF]/65 via-[#FBF6EF]/85 to-[#FBF6EF]" />
+        <div className="mt-14 grid gap-10">
+          <StoryBlock
+            label="Building purchased"
+            title="The day Little Cove became real"
+            text="This opportunity was prayed for, worked toward, and dreamed about for a long time. The building created room to serve local families, grow carefully, and build something truly special in Mount Ida. The support, encouragement, and donated or gently used daycare items from the community helped the vision move forward."
+          >
+            <PhotoGrid
+              images={[
+                "/images/renovations/day1-1.jpg",
+                "/images/renovations/day1-2.jpg",
+                "/images/renovations/day1-3.jpg",
+                "/images/renovations/day1-4.jpg",
+              ]}
+              alt="Little Cove building renovation"
+            />
+          </StoryBlock>
 
-        <div className="relative">
-          <section className="mx-auto grid max-w-6xl items-center gap-10 px-5 pb-14 pt-14 md:grid-cols-[1.05fr_0.95fr] md:pb-20 md:pt-20">
-            <div className="text-center md:text-left">
-              <p
-                className={`${pacifico.className} mb-4 text-3xl text-[#C98C6B] md:text-4xl`}
-              >
-                Building Little Cove
-              </p>
+          <StoryBlock
+            label="The first touch"
+            title="The check-in area started to feel like home"
+            text="The first piece of decor in the future check-in and photo area felt like a groundbreaking moment. It was a small detail, but it made the dream feel visible and helped set the warm, personal tone Joie wanted for Little Cove."
+            reverse
+          >
+            <SinglePhoto src="/images/renovations/day2-1.jpg" alt="Early Little Cove check-in area update" />
+          </StoryBlock>
 
-              <h1 className="mx-auto max-w-3xl text-4xl font-bold leading-tight tracking-[-0.03em] text-[#4A3024] md:mx-0 md:text-6xl">
-                Little Cove is getting so close.
-              </h1>
+          <StoryBlock
+            label="Classroom update"
+            title="The rooms began coming together"
+            text="Centers, rugs, books, pretend play, art, and practical learning pieces began filling the rooms. The goal was never a cold classroom. It was a place children could be excited to enter, with learning built naturally into the day."
+          >
+            <PhotoGrid
+              images={[
+                "/images/updates/classroom-wide.jpg",
+                "/images/updates/classroom-play-area.jpg",
+                "/images/updates/classroom-big-room.jpg",
+                "/images/updates/look-what-were-learning.jpg",
+              ]}
+              alt="Little Cove classroom"
+            />
+          </StoryBlock>
 
-              <p className="mx-auto mt-6 max-w-2xl text-base leading-8 text-[#6B4F3A] md:mx-0 md:text-lg">
-                The state visit is scheduled, forms are going out, and we are working hard to get every room ready for opening.
-              </p>
+          <StoryBlock
+            label="Painted windows"
+            title="The front of the building got its Little Cove welcome"
+            text="The painted windows brought color, warmth, faith, and personality to the building. They became one of the details that made the space feel welcoming before families even stepped through the door."
+            reverse
+          >
+            <SinglePhoto src="/images/updates/window-art-collage.jpg" alt="Little Cove painted window collage" />
+          </StoryBlock>
+        </div>
+      </section>
 
-              <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row md:justify-start">
-                <a
-                  href="https://m.me/TheLittleCoveEarlyLearning"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-[#C98C6B] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#B87652]"
-                >
-                  Message for a Form
-                </a>
-
-                <a
-                  href="/enroll"
-                  className="rounded-full bg-[#4F3528] px-7 py-3.5 text-center font-semibold text-white shadow-md transition hover:-translate-y-0.5 hover:bg-[#3D281F]"
-                >
-                  Enrollment Info
-                </a>
-              </div>
-
-              <p className="mt-5 text-sm font-medium text-[#8A6D5A]">
-                Renovation updates, photos, and progress from Mount Ida.
-              </p>
+      <section className="section-tint">
+        <div className="section-space site-container">
+          <div className="dark-split premium-card-dark">
+            <div className="dark-split-copy bg-[#fff8ef] text-[var(--cocoa)]">
+              <p className="eyebrow">Where it is headed</p>
+              <h2 className="section-title mt-4">A warm home-away-from-home for little learners.</h2>
+              <p className="lead-copy mt-5">Little Cove is being built to feel calm, safe, personal, and prepared for the real rhythms of family life.</p>
+              <a href="/enroll" className="btn-primary mt-7">Ask About Enrollment</a>
             </div>
-
-            <div className="mx-auto w-full max-w-md">
-              <div className="rounded-[2rem] border border-[#E5D3C5] bg-white/85 p-5 shadow-xl shadow-[#9C6B4F]/10 backdrop-blur">
-                <img
-                  src="/images/logo.png"
-                  alt="Little Cove Early Learning logo"
-                  className="mx-auto h-auto max-h-[290px] w-full object-contain"
-                />
-
-                <div className="mt-5 rounded-3xl bg-[#FFF8F1] p-5 text-center">
-                  <p className="text-sm font-semibold text-[#4F3528]">
-                    Renovation Updates
-                  </p>
-                  <p className="mt-1 text-sm text-[#7B5F4D]">
-                    Mount Ida, Arkansas
-                  </p>
-                </div>
-              </div>
+            <div className="dark-tile-grid">
+              <DarkTile title="Warm classrooms" text="Comfortable rooms designed for everyday routines and play." />
+              <DarkTile title="Early learning" text="Books, centers, art, music, and hands-on activities." />
+              <DarkTile title="Faith-based pieces" text="Age-appropriate values woven gently into the environment." />
+              <DarkTile title="Personal care" text="A smaller, local center where children and families can be known." />
             </div>
-          </section>
-
-          <section className="mx-auto max-w-6xl px-5 pb-10">
-            <div className="grid gap-3 rounded-[2rem] border border-[#E5D3C5] bg-white/85 p-4 shadow-sm md:grid-cols-4">
-              {[
-                "State visit scheduled",
-                "Space updates",
-                "Classrooms coming together",
-                "Forms going out",
-              ].map((item) => (
-                <div
-                  key={item}
-                  className="rounded-2xl bg-[#FFF8F1] px-4 py-4 text-center text-sm font-semibold text-[#5C4033]"
-                >
-                  {item}
-                </div>
-              ))}
-            </div>
-          </section>
-
-          <section className="mx-auto max-w-5xl px-5 py-12 text-center">
-            <p
-              className={`${pacifico.className} text-3xl text-[#C98C6B] md:text-4xl`}
-            >
-              The story so far
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-5xl">
-              Turning a building into Little Cove.
-            </h2>
-
-            <p className="mx-auto mt-5 max-w-3xl text-base leading-8 text-[#6B4F3A]">
-              Little Cove is being built with a lot of love, prayer, work, and help from the community. This is where families can see the rooms, updates, forms, playground notes, and all the little details as opening gets closer.
-            </p>
-          </section>
-
-          <section className="mx-auto max-w-6xl px-5 py-10">
-            <div className="space-y-10">
-              <RenovationUpdate
-                title="Say Hello to Little Cove Early Learning Location!"
-                label="Building Purchased!"
-                text="I seriously cannot contain my excitement anymore!! This opportunity is something I’ve prayed for, worked toward, and dreamed about, and now it’s finally happening! We are SO excited to be able to serve families in this community. There is so much room to grow, expand, and create something truly special here, and I cannot wait to see where this journey takes us. I am beyond blessed and so thankful for all the love, support, and encouragement I’ve already received. It truly means more than you know. Now that being said, I am ACTIVELY looking for all things daycare/pre-k! 🧸✨ If you or someone you know is selling gently used items, please tag them below! I’ve also attached my wishlist, but absolutely no pressure at all. Thank you all again for supporting this dream and allowing me the opportunity to provide this service. I seriously cannot wait to meet you all!! ❤️"
-              >
-                <div className="grid grid-cols-2 gap-3">
-                  {[
-                    "/images/renovations/day1-1.jpg",
-                    "/images/renovations/day1-2.jpg",
-                    "/images/renovations/day1-3.jpg",
-                    "/images/renovations/day1-4.jpg",
-                  ].map((src, i) => (
-                    <a
-                      key={i}
-                      href={src}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block overflow-hidden rounded-2xl border border-[#E5D3C5] bg-white shadow-sm"
-                    >
-                      <img
-                        src={src}
-                        alt={`Little Cove renovation update ${i + 1}`}
-                        className="h-[130px] w-full object-cover transition duration-300 group-hover:scale-105 md:h-[180px]"
-                      />
-                    </a>
-                  ))}
-                </div>
-              </RenovationUpdate>
-
-              <RenovationUpdate
-                title="The First Touch"
-                label="Getting Started"
-                text="I feel like this is the ground breaking! Our first piece of decor in our soon-to-be check-in and Photo Booth area! SO EXCITING! We close on our house on Tuesday and then it’s full time Little Cove time so I can get this opened for my Montgomery parents! 🫶❤️"
-                reverse
-              >
-                <a
-                  href="/images/renovations/day2-1.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block overflow-hidden rounded-[2rem] border border-[#E5D3C5] bg-white p-2 shadow-sm"
-                >
-                  <img
-                    src="/images/renovations/day2-1.jpg"
-                    alt="Little Cove renovation update"
-                    className="h-[280px] w-full rounded-[1.5rem] object-cover transition duration-300 group-hover:scale-[1.02] md:h-[390px]"
-                  />
-                </a>
-              </RenovationUpdate>
-
-              <RenovationUpdate
-                title="Classrooms are coming together"
-                label="Room update"
-                text="Y’all, this is not just a daycare. This is basically the cool kid hangout with learning, of course. The rooms are getting centers, rugs, books, pretend play, and all the little pieces that make it feel like Little Cove."
-              >
-                <div className="grid grid-cols-2 gap-3">
-                  {["/images/updates/classroom-wide.jpg", "/images/updates/classroom-play-area.jpg", "/images/updates/classroom-big-room.jpg", "/images/updates/look-what-were-learning.jpg"].map((src, i) => (
-                    <a
-                      key={src}
-                      href={src}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="group block overflow-hidden rounded-2xl border border-[#E5D3C5] bg-white shadow-sm"
-                    >
-                      <img
-                        src={src}
-                        alt={`Little Cove classroom update ${i + 1}`}
-                        className="h-[130px] w-full object-cover transition duration-300 group-hover:scale-105 md:h-[180px]"
-                      />
-                    </a>
-                  ))}
-                </div>
-              </RenovationUpdate>
-
-              <RenovationUpdate
-                title="The windows got some love"
-                label="Painted windows"
-                text="The front windows have color, warmth, and the sweetest welcome now. Shoutout to the people helping make this building feel like home before the doors even open."
-                reverse
-              >
-                <a
-                  href="/images/updates/window-art-collage.jpg"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group block overflow-hidden rounded-[2rem] border border-[#E5D3C5] bg-white p-2 shadow-sm"
-                >
-                  <img
-                    src="/images/updates/window-art-collage.jpg"
-                    alt="Little Cove painted window art"
-                    className="h-[280px] w-full rounded-[1.5rem] object-cover transition duration-300 group-hover:scale-[1.02] md:h-[390px]"
-                  />
-                </a>
-              </RenovationUpdate>
-            </div>
-          </section>
-
-          <section className="mx-auto max-w-6xl px-5 py-14">
-            <div className="overflow-hidden rounded-[2rem] border border-[#E5D3C5] bg-[#4F3528] shadow-lg">
-              <div className="grid gap-0 md:grid-cols-[0.95fr_1.05fr]">
-                <div className="bg-[#FFF8F1] p-8 md:p-10">
-                  <p
-                    className={`${pacifico.className} text-3xl text-[#C98C6B]`}
-                  >
-                    We’re getting closer
-                  </p>
-
-                  <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                    We can’t wait to welcome your family into this space.
-                  </h2>
-
-                  <p className="mt-5 leading-8 text-[#6B4F3A]">
-                    Little Cove is being built to feel warm, calm, safe, and
-                    personal. Follow along as the space continues coming
-                    together.
-                  </p>
-
-                  <a
-                    href="https://m.me/TheLittleCoveEarlyLearning"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-7 inline-block rounded-full bg-[#C98C6B] px-7 py-3 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
-                  >
-                    Message for a Form
-                  </a>
-                </div>
-
-                <div className="p-8 text-white md:p-10">
-                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#F3C7A7]">
-                    What we’re creating
-                  </p>
-
-                  <h3 className="mt-3 text-2xl font-bold">
-                    A cozy home-away-from-home for little ones.
-                  </h3>
-
-                  <p className="mt-4 text-sm leading-7 text-white/80">
-                    The goal is simple: a safe, loving, faith-based environment
-                    where children can learn, play, grow, and feel cared for
-                    each day.
-                  </p>
-
-                  <div className="mt-6 grid gap-3 text-sm text-white/80">
-                    <div className="rounded-2xl bg-white/10 p-4">
-                      Warm and welcoming daycare space
-                    </div>
-                    <div className="rounded-2xl bg-white/10 p-4">
-                      Early learning and daily routines
-                    </div>
-                    <div className="rounded-2xl bg-white/10 p-4">
-                      Personal care for local families
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section className="px-5 pb-20 pt-8">
-            <div className="mx-auto max-w-5xl rounded-[2rem] border border-[#E5D3C5] bg-white p-8 text-center shadow-sm md:p-12">
-              <p className={`${pacifico.className} text-3xl text-[#C98C6B]`}>
-                Have questions?
-              </p>
-
-              <h2 className="mt-3 text-3xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-4xl">
-                Ask about tours, updates, and enrollment list details.
-              </h2>
-
-              <p className="mx-auto mt-5 max-w-2xl leading-7 text-[#6B4F3A]">
-                If you’re interested in Little Cove, message us to ask about
-                the renovation, current progress, enrollment, tours, and next
-                steps.
-              </p>
-
-              <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
-                <a
-                  href="https://m.me/TheLittleCoveEarlyLearning"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="rounded-full bg-[#C98C6B] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#B87652]"
-                >
-                  Message for a Form
-                </a>
-
-                <a
-                  href="/enroll"
-                  className="rounded-full bg-[#4F3528] px-8 py-4 font-semibold text-white shadow-md transition hover:bg-[#3D281F]"
-                >
-                  Enrollment Info
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <footer className="border-t border-[#E5D3C5] bg-[#4F3528] px-5 py-12 text-white">
-            <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-[1.1fr_0.9fr_0.9fr]">
-              <div>
-                <p className={`${pacifico.className} text-3xl text-[#F3C7A7]`}>
-                  Little Cove
-                </p>
-
-                <h2 className="mt-3 text-xl font-bold tracking-[-0.02em] text-white">
-                  Early Learning
-                </h2>
-
-                <p className="mt-4 max-w-md text-sm leading-7 text-white/75">
-                  A cozy faith-based daycare and early learning center being
-                  created for families in Mount Ida, Montgomery County, and the
-                  surrounding communities.
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-[#F3C7A7]">
-                  Contact
-                </h3>
-
-                <div className="mt-4 space-y-3 text-sm text-white/75">
-                  <p>159 N George St</p>
-                  <p>Mount Ida, AR 71957</p>
-                  <a
-                    href="https://m.me/TheLittleCoveEarlyLearning"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block transition hover:text-[#F3C7A7]"
-                  >
-                    Message Little Cove
-                  </a>
-                </div>
-              </div>
-
-              <div>
-                <h3 className="text-sm font-bold uppercase tracking-[0.18em] text-[#F3C7A7]">
-                  Quick Links
-                </h3>
-
-                <div className="mt-4 grid gap-3 text-sm text-white/75">
-                  <a href="/" className="transition hover:text-[#F3C7A7]">
-                    Home
-                  </a>
-                  <a href="/enroll" className="transition hover:text-[#F3C7A7]">
-                    Enrollment
-                  </a>
-                  <a href="/pricing" className="transition hover:text-[#F3C7A7]">
-                    Pricing
-                  </a>
-                  <a href="/apply" className="transition hover:text-[#F3C7A7]">
-                    Careers
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="mx-auto mt-10 flex max-w-6xl flex-col gap-3 border-t border-white/10 pt-6 text-sm text-white/55 md:flex-row md:items-center md:justify-between">
-              <p>
-                © {new Date().getFullYear()} Little Cove Early Learning. All
-                rights reserved.
-              </p>
-
-              <p>
-                Website by{" "}
-                <a
-                  href="https://hometownwebservicesar.cc"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="font-semibold text-[#F3C7A7] transition hover:text-white"
-                >
-                  Hometown Web Services
-                </a>
-              </p>
-            </div>
-          </footer>
-
-          <div className="sr-only">
-            daycare Mount Ida AR, childcare Mount Ida Arkansas, preschool Mount
-            Ida, early learning center Mount Ida AR
           </div>
         </div>
-      </div>
+      </section>
+
+      <ClosingCTA
+        eyebrow="Follow the next chapter"
+        title="Ask about tours, updates, and enrollment."
+        text="Message Little Cove to ask about the center, current openings, the enrollment process, or anything you would like to know before visiting."
+        primary={{ href: messengerUrl, label: "Message Little Cove", external: true }}
+        secondary={{ href: "tel:5016721817", label: "Call 501-672-1817" }}
+      />
+      <SiteFooter />
     </main>
   );
 }
 
-function RenovationUpdate({
-  title,
+function StoryBlock({
   label,
+  title,
   text,
-  children,
   reverse = false,
+  children,
 }: {
-  title: string;
   label: string;
+  title: string;
   text: string;
-  children: React.ReactNode;
   reverse?: boolean;
+  children: React.ReactNode;
 }) {
   return (
-    <article className="rounded-[2rem] border border-[#E5D3C5] bg-white/90 p-5 shadow-sm md:p-6">
-      <div className="grid items-center gap-8 md:grid-cols-2">
-        <div className={reverse ? "order-2 md:order-1" : ""}>
-          {children}
-        </div>
-
-        <div className={reverse ? "order-1 md:order-2" : ""}>
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[#C98C6B]">
-            {label}
-          </p>
-
-          <h2 className="mt-3 text-2xl font-bold tracking-[-0.02em] text-[#4A3024] md:text-3xl">
-            {title}
-          </h2>
-
-          <p className="mt-4 text-sm leading-7 text-[#6B4F3A]">{text}</p>
+    <article className="staff-profile">
+      <div className={`staff-profile-grid ${reverse ? "lg:[&>*:first-child]:order-2" : ""}`}>
+        <div className="p-4 sm:p-5">{children}</div>
+        <div className="staff-profile-copy">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[var(--blush-deep)]">{label}</p>
+          <h2 className="card-title mt-4 text-3xl sm:text-4xl">{title}</h2>
+          <p className="lead-copy mt-5 text-sm sm:text-base">{text}</p>
         </div>
       </div>
     </article>
   );
+}
+
+function PhotoGrid({ images, alt }: { images: string[]; alt: string }) {
+  return (
+    <div className="gallery-mosaic">
+      {images.map((src, index) => (
+        <a key={src} href={src} target="_blank" rel="noopener noreferrer">
+          <img src={src} alt={`${alt} ${index + 1}`} className="h-40 sm:h-52" />
+        </a>
+      ))}
+    </div>
+  );
+}
+
+function SinglePhoto({ src, alt }: { src: string; alt: string }) {
+  return (
+    <div className="gallery-mosaic">
+      <a href={src} target="_blank" rel="noopener noreferrer" className="wide">
+        <img src={src} alt={alt} className="h-[22rem]" />
+      </a>
+    </div>
+  );
+}
+
+function DarkTile({ title, text }: { title: string; text: string }) {
+  return <div className="dark-tile"><h3>{title}</h3><p>{text}</p></div>;
 }
