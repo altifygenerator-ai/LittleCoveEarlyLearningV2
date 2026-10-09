@@ -5,7 +5,7 @@ import data from "@/content/content.json";
 export const metadata: Metadata = {
   title: "Faith-Based Daycare & Pre-K in Mount Ida, AR",
   description:
-    "Little Cove Early Learning offers warm, faith-based childcare in Mount Ida, Arkansas, with infant, toddler, and Pre-K programs. Toddler and Pre-K enrollment is currently open.",
+    "Little Cove Early Learning offers warm, faith-based childcare in Mount Ida, Arkansas, with infant, toddler, and Pre-K programs. Learn about programs and request enrollment details.",
   keywords: [
     "daycare Mount Ida AR",
     "child care Mount Ida Arkansas",
